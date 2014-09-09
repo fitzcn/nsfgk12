@@ -3,9 +3,9 @@ import random
 class Die:
 	def __init__(self, numSides):
 		self.numSides = numSides
-		self.value = random.randint(1,6)
+		self.value = random.randint(1,numSides)
 	def rollDie(self):
-		self.value = random.randint(1,6)
+		self.value = random.randint(1,numSides)
 
 def rollCup(cup):
 	for die in cup:
