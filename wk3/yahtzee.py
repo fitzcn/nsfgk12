@@ -5,7 +5,7 @@ class Die:
 		self.numSides = numSides
 		self.value = random.randint(1,numSides)
 	def rollDie(self):
-		self.value = random.randint(1,numSides)
+		self.value = random.randint(1,self.numSides)
 
 def rollCup(cup):
 	for die in cup:
